@@ -1,0 +1,8 @@
+REST API :-
+1. Stateless:- The server does not store any information about the client between requests 
+2. Client-server Architecture :- the client asks for data and the server does what requested 
+GET :- get data 
+POST :- Insert  data 
+PUT :- Update data only small part 
+PATCH :- Update whole part 
+DELETE :- DELETE data

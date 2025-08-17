@@ -1,0 +1,4 @@
+API :- It acts as a two way communication bridge between frontend and backend 
+API:- APPLICATION PROGRAMMING INTERFACE 
+
+

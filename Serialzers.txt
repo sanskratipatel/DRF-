@@ -1,0 +1,48 @@
+Serializers :- These are like translaters that convert complex
+data in json or xml format (that frontend want) 
+
+Types  of Serializers: 
+1. Model Serializers :-   
+        Auto-generates fields from Django model.
+        Less boilerplate, tied directly to a model.
+
+       
+
+2. Serializer Class: -
+    Manually define every field.
+    Good when you don’t directly want to tie to a model.
+
+    ->> Serialization:
+        user = {"id": 1, "username": "sanskrati", "email": "test@example.com"}
+        serializer = UserSerializer(user)
+        print(serializer.data)  
+        # {'id': 1, 'username': 'sanskrati', 'email': 'test@example.com'}
+
+    ->> Deserialization (validate + convert JSON → Python object):
+        data = {"id": 2, "username": "patel", "email": "patel@example.com"}
+        serializer = UserSerializer(data=data)
+        if serializer.is_valid():
+        print(serializer.validated_data)
+
+3. ListSerializer :- 
+    Handles lists of objects (batch serialization/deserialization).
+    Used automatically when serializing many=True.
+
+    users = User.objects.all()
+    serializer = UserModelSerializer(users, many=True)
+    print(serializer.data)   # List of dicts
+
+4. HyperlinkedModelSerializer : -
+   Instead of primary keys, it uses URLs for relationships.
+
+    class UserHyperlinkedSerializer(serializers.HyperlinkedModelSerializer):
+        class Meta:
+            model = User
+            fields = ['url', 'username', 'email']
+
+
+
+
+
+
+DeSerializers :- It is convert data json or xml into queryset
