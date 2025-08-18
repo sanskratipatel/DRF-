@@ -1,5 +1,4 @@
-#  Django REST Framework (DRF) Learning Repository
-
+#  Django REST Framework (DRF) 
 This repository contains my notes and revision material while learning **Django REST Framework (DRF)**.  
 The goal is to clearly understand **REST APIs, Serializers, Models, and DRF concepts**.
 
