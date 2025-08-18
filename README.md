@@ -91,6 +91,6 @@ The goal is to clearly understand **REST APIs, Serializers, Models, and DRF conc
 
 ## 👩‍💻 Author
 **Sanskrati Patel**  
-📧 [Email](mailto:patelsanskrati05@gmail.com)  
+📧 (mailto:patelsanskrati05@gmail.com)  
  
 
